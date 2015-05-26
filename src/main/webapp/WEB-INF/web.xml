@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MavenWebDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <!-- 描述性的文字说明，没实际意义，一般情况下直接删除掉 -->
+    <description>MavenWebDemo</description>
+    <display-name>MavenWebDemo</display-name>
+    
+  <!-- servlet名称，与servlet-mapping中的servlet-name必须一致 -->
+    <servlet-name>ListServlet</servlet-name>
+  <!-- servlet类所在的包路径，即上面T所在包路径 -->
+    <servlet-class>com.ds.servlet.ListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  <!-- servlet名称，与上面中的servlet-name必须一致 -->
+    <servlet-name>ListServlet</servlet-name>
+  <!-- servlet过滤的路径，也就是你在jsp中访问servlet时应该在action中填写的东西 -->
+    <url-pattern>/List.action</url-pattern>
+  </servlet-mapping>
+</web-app>
