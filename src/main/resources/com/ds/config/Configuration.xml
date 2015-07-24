@@ -40,7 +40,7 @@
   </environments>
 
   <!-- <mappers>
-    <mapper resource="org/apache/ibatis/submitted/complex_property/User.xml"/>
+    <mapper resource="com/ds/config/sqlxml/Tablea.xml"/>
   </mappers> -->
 
 </configuration>
